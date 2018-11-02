@@ -51,7 +51,7 @@ module Grafana
       return delete_request(endpoint)
     end
 
-    def create_user(properties={})
+    def create_user(getget)
       endpoint = "/api/admin/users"
       @logger.info("Creating user: #{properties['name']}") if @debug
       @logger.info("Data: #{properties.to_s}") if @debug

@@ -44,6 +44,7 @@ g = Grafana::Client.new('[GRAFANA_HOST]', [GRAFANA_PORT], nil, nil, options)
 #### Individual Module Documentation
 
 * [Admin](docs/ADMIN.md) 
+* [Alert](docs/ALERT.md) 
 * [Dashboard](docs/DASHBOARD.md) 
 * [Datasource](docs/DATASOURCE.md) 
 * [Frontend](docs/FRONTEND.md) 

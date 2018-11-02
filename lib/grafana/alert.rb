@@ -9,9 +9,9 @@ module Grafana
       return get_request(endpoint)
     end
 
-    def get_one_alert(alert_id)
+    def get_alert(alert_id)
       endpoint = "/api/alerts/#{alert_id}"
-      @logger.info("Getting one alert (GET #{endpoint})") if @debug
+      @logger.info("Getting alert (GET #{endpoint})") if @debug
       return get_request(endpoint)
     end
 
@@ -45,7 +45,7 @@ module Grafana
       return put_request(endpoint, properties.to_json)
     end
 
-    def delete_aldert_notification(notify_id)
+    def delete_alert_notification(notify_id)
       endpoint = "/api/alert-notifications/#{notify_id}"
       @logger.info("Delete alert notification (DELETE #{endpoint})") if @debug
       return delete_request(endpoint)
